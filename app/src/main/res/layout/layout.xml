@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="-4dp"
+        android:contentDescription="@string/background_color"
+        tools:src="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/pageImage"
+        android:layout_width="400dp"
+        android:layout_height="500dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="67dp"
+        android:contentDescription="@string/front_of_the_children_s_object_book"
+        android:src="@drawable/bookfront"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/nextButton"
+        style="@style/GreenText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pageImage"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/next_button"
+        tools:ignore="TextContrastCheck,RedundantDescriptionCheck"
+        tools:text="Next" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backButton"
+        android:layout_marginTop="6dp"
+        tools:text="Reset" />
+
+    <Button
+        android:id="@+id/backButton"
+        style="@style/GreenText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nextButton"
+        android:layout_marginTop="0dp"
+        tools:ignore="TextContrastCheck"
+        tools:text="Back" />
+
+</RelativeLayout>

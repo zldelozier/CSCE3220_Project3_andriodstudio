@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Project3</string>
+    <string name="background_color">background color</string>
+    <string name="next_button">Next button</string>
+    <string name="front_of_the_children_s_object_book">Front of The Children\'s Object Book</string>
 </resources>
